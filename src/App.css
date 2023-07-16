@@ -1,0 +1,201 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto+Slab:wght@300&display=swap');
+
+* {
+  font-family: 'Roboto Slab', serif;
+}
+
+body{
+  margin: 0 auto;
+  padding: 0;
+  background: linear-gradient(45deg ,rgb(21, 229, 236),rgb(193, 246, 250));
+  width: 100vw;
+  height: 100vh;
+}
+
+.title-wrapper{
+  width: 100%;
+  height: 100px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background: rgba(157, 157, 255, 0.219);
+}
+
+.title{
+  color: rgb(3, 3, 94);
+  font-size: 40px;
+}
+
+.mid-section{
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+.todo-wrapper{
+  margin-top: 100px;
+  display: flex;
+  flex-direction: column;
+  height: 600px;
+  width: 400px;
+  background: rgba(157, 157, 255, 0.219);
+  justify-content: start;
+  align-items: center;
+  border-radius: 10px;
+}
+
+
+.todo-input-wrapper{
+  border-radius: 10px;
+  justify-content: space-evenly;
+  align-items: center;
+  display: flex;
+  flex-direction: column;
+  width: 100%;
+  height: 25%;
+  background: rgba(157, 157, 255, 0.219);
+}
+
+.todo-title{
+  font-size: 30px;
+}
+
+
+.todo-field-wrapper{
+  width: 75%;
+  height: 50px;
+  display: grid;
+  grid-template-columns: repeat(10,1fr);
+  grid-template-rows: 1fr;
+  gap: 5px;
+  max-height: 50px;
+}
+.todo-button{
+  background-color: rgb(3, 3, 94);
+  border: 20px;
+  grid-area: 1/9/1/11;
+  color: white;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-size: 30px;
+  border-radius: 5px;
+  cursor: pointer;
+  transition: background-color 0.05s ease-in-out;
+}
+
+.todo-button:hover{
+  background-color: rgba(3, 3, 94, 0.425);
+}
+
+.todo-input{
+  background-color: white;
+  border: 1px solid #03035e;
+  grid-area: 1/1/1/9;
+  outline: none;
+  color: rgb(0, 0, 0);
+  font-size: 20px;
+  border-radius: 5px;
+}
+
+
+.todo-list{
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  justify-content: start;
+  align-items: center;
+  overflow: auto;
+  height: 75%;
+}
+
+.task{
+  display: grid;
+  width: 75%;
+  height: 50px;
+  border-radius: 10px;
+  grid-template-columns: repeat(10,1fr);
+  grid-template-rows: repeat(1,1fr);
+  gap: 5px;
+  margin-top: 7px;
+  margin-bottom: 7px;
+  background-color: #97cffa;
+
+}
+
+.task-name-wrapper{
+  display: flex;
+  flex-direction: row;
+  justify-content: start;
+  align-items: center;
+  grid-area: 1/1/1/7;
+}
+.task-name{
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  text-align: start;
+  margin-left: 10px;
+  color: #03035e;
+  font-size: 15px;
+  background-color: #9d9dff38;
+  border-radius: 10px ;
+  height: 35px;
+  width: 100%;
+  outline: none;
+  border: none;
+  overflow: hidden;
+}
+
+.task-name > div{
+  margin-left: 5px;
+
+}
+
+.task-delete{
+  grid-area: 1/8/1/9;
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  text-align: start;
+  margin-left: 10px;
+  color: #03035e;
+}
+
+.task img{
+  width: 20px;
+  height: 20px;
+  cursor: pointer;
+  filter: invert(1);
+  padding: 2px;
+}
+
+.task-edit{
+  grid-area: 1/9/1/10;
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  text-align: start;
+  margin-left: 10px;
+  color: #03035e;
+}
+
+.img-wrapper{
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: center;
+  padding: 2px;
+  transition: transform 0.1s ease-in-out;
+  border: 1px solid black;
+  border-radius: 50%;
+  background: rgba(255, 0, 0, 0.37);
+}
+
+.edit-wrapper{
+  background: #03035e79;
+}
+
+.img-wrapper:hover{
+  transform: scale(1.1);
+}
